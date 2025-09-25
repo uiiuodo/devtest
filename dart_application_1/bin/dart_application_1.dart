@@ -1,27 +1,22 @@
 main() {
   //문제1번
 
-  print("필수 문제 1번");
+  print("*필수 문제 1번");
+  print(" ");
 
   int score = 84;
 
   if (score >= 90) {
-    print("이 학생의 점수는 [$score점] 이며, 등급은 [A등급]입니다!");
+    print("   이 학생의 점수는 [$score점] 이며, 등급은 [A등급]입니다!");
   } else if (score >= 80) {
-    print("이 학생의 점수는 [$score점] 이며, 등급은 [B등급]입니다!");
+    print("   이 학생의 점수는 [$score점] 이며, 등급은 [B등급]입니다!");
   } else {
-    print("이 학생의 점수는 [$score점] 이며, 등급은 [C등급]입니다!");
+    print("   이 학생의 점수는 [$score점] 이며, 등급은 [C등급]입니다!");
   }
-
-  //문제2번 - 생각1
-  Map<String, int> priceA = {"티셔츠": 10000, "바지": 8000, "모자": 4000};
-
-  int sumA = (priceA["티셔츠A"]! * 2) + priceA["바지A"]! + (priceA["모자A"]! * 2);
-
-  print("장바구니에 $sumA원 어치를 담으셨네요!");
+  print(" ");
 
   //문제2번
-  print("필수 문제 2번");
+  print("*필수 문제 2번");
   print(" ");
   List<String> cart = ["티셔츠", "바지", "모자", "티셔츠", "바지"];
 
@@ -49,13 +44,13 @@ main() {
 
   print("   총 금액: $total 원");
   print(" ");
-  print("장바구니에 $total원 어치를 담으셨네요!");
+  print("   장바구니에 $total원 어치를 담으셨네요!");
 
   int discount = total - (total * 10 ~/ 100);
   int dc = total * 10 ~/ 100;
 
   if (total > 20000) {
-    print("할인 금액 : $dc원");
-    print("최종적으로 결제하실 금액은 $discount입니다!");
+    print("   할인 금액 : $dc원");
+    print("   최종적으로 결제하실 금액은 $discount입니다!");
   }
 }
